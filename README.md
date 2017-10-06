@@ -1,6 +1,6 @@
 # httpfs
 
-Command assets compiles a directory content to a Go file.
+Package httpfs implements http.FileSystem on top of a map[string]string.
 
 Installation
 
