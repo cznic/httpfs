@@ -36,7 +36,7 @@ func NewFileSystem(files map[string]string, modTime time.Time) *FileSystem {
 	return &FileSystem{files, modTime}
 }
 
-// Open implementats http.FileSystem.
+// Open implements http.FileSystem.
 func (f *FileSystem) Open(name string) (fi http.File, err error) {
 	if strings.HasSuffix(name, "/") {
 		dir := make([]string, 0) // Must be non-nil.
