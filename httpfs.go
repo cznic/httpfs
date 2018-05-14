@@ -55,7 +55,7 @@ func (f *FileSystem) Open(name string) (fi http.File, err error) {
 		return nil, fmt.Errorf("no such file: %q", name)
 	}
 
-	return &file{name: name, s: s}, nil
+	return &file{FileSystem: f, name: name, s: s}, nil
 }
 
 type file struct {
