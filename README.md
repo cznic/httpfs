@@ -1,9 +1,5 @@
-# httpfs
+`github.com/cznic/httpfs` has moved to [`modernc.org/httpfs`](https://godoc.org/modernc.org/httpfs) ([vcs](https://gitlab.com/cznic/httpfs)).
 
-Package httpfs implements http.FileSystem on top of a map[string]string.
+Please update your import paths to `modernc.org/httpfs`.
 
-Installation
-
-    $ go get [-u] github.com/cznic/httpfs
-
-Documentation: [godoc.org/github.com/cznic/httpfs](http://godoc.org/github.com/cznic/httpfs)
+This repo is now archived.
